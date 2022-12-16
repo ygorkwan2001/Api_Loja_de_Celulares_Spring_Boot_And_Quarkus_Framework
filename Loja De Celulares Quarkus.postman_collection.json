@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "3a0eb918-f75a-4467-a80e-9c2dbb54d80f",
+		"name": "Loja De Celulares Quarkus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24839408"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/loja",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Loja 2 Quarkus\",\r\n    \"endereco\":\"Endereco teste 2 Quarkus\",\r\n    \"telefone\":\"999984\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/loja",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/loja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/loja",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idLoja\":1,\r\n    \"marca\":\"Samsung\",\r\n    \"modelo\":\"Galaxy\",\r\n    \"descricao\":\"Galaxy xyz\",\r\n    \"preco\": 1600.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/loja/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/loja/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"loja",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"idLoja\": 2,\r\n    \"marca\": \"Samsung\",\r\n    \"modelo\": \"galaxy XYZ\",\r\n    \"descricao\": \"modelo Samsung XYZ\",\r\n    \"preco\": 1300.00\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

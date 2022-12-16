@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "bcdb22d9-88e7-428f-a3e5-64ba62db337e",
+		"name": "Loja De Celulares SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24839408"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/loja",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Loja 2\",\r\n    \"endereco\":\"Endereco teste 2\",\r\n    \"telefone\":\"9999998949999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/loja",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/loja",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/loja",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"loja"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idLoja\":2,\r\n    \"marca\":\"Apple\",\r\n    \"modelo\":\"iphone\",\r\n    \"descricao\":\"modelo Apple\",\r\n    \"preco\":1900.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/loja/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/loja/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"loja",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/produto/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/produto/5",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"idLoja\": 2,\r\n    \"marca\": \"Samsung\",\r\n    \"modelo\": \"galaxy XYZ\",\r\n    \"descricao\": \"modelo Samsung XYZ\",\r\n    \"preco\": 1300.00\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/produto/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"produto",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
